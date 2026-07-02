@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Real-Time Stock Screener
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+Real-Time Stock Screener is a Next.js-based web application that allows users to explore, filter, sort, and analyze a large collection of simulated stock market data. The application provides an interactive dashboard with stock charts, advanced filtering, watchlist management, market statistics, and realistic stock generation logic.
+
+The project was developed as an internship assignment to demonstrate frontend development skills, state management, data visualization, and user interface design.
+
+---
+
+## Features
+
+### Stock Data Management
+
+- Generate up to 10,000 simulated stocks
+- Realistic financial relationships between stock metrics
+- Dynamic stock information display
+
+### Search & Filtering
+
+- Search stocks by symbol
+- Filter by sector
+- Filter by RSI values
+- Advanced filtering options
+
+### Sorting
+
+- Sort by Price
+- Sort by RSI
+- Dynamic sorting controls
+
+### Stock Analysis
+
+- Interactive stock selection
+- Detailed stock information panel
+- Price history visualization using charts
+
+### Watchlist
+
+- Add stocks to watchlist
+- Remove stocks from watchlist
+- Persistent watchlist using Local Storage
+
+### Market Insights
+
+- Market statistics dashboard
+- Market movers section
+- Top gainers and losers
+
+### User Interface
+
+- Responsive design
+- Fixed table header
+- Pinned Symbol column
+- Hover effects and polished styling
+- Card-based layout with shadows
+- Empty state handling
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- Next.js 16
+- React
+- JavaScript
+- Tailwind CSS
+
+### State Management
+
+- Zustand
+
+### Data Visualization
+
+- Lightweight Charts
+
+### Storage
+
+- Browser Local Storage
+
+---
+
+## Project Structure
+
+```text
+stock-screener/
+├── app/
+├── components/
+├── data/
+├── store/
+├── public/
+├── README.md
+├── Progress_Report.md
+└── package.json
+```
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone <repository-url>
+```
+
+### Navigate to the Project
+
+```bash
+cd stock-screener
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Running Locally
+
+### Development Mode
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Production Build
 
-## Learn More
+Build the application:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run start
+```
 
-## Deploy on Vercel
+Open:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Data Modeling
+
+The application includes realistic stock generation logic:
+
+- Larger companies tend to have lower beta values.
+- Smaller companies tend to have higher growth rates.
+- Utilities companies generally have higher debt-to-equity ratios.
+- Technology companies generally have lower debt-to-equity ratios.
+- RSI values correlate with price movement.
+- Trading volume scales with market capitalization and volatility.
+
+These relationships create more realistic datasets compared to purely random stock generation.
+
+---
+
+## Performance
+
+- Tested with datasets up to 10,000 stocks.
+- Optimized table rendering.
+- Persistent client-side state management.
+- Production build successfully generated using Next.js.
+
+## Project Status
+
+Completed
+
+All planned requirements have been implemented and tested successfully.
