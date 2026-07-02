@@ -102,7 +102,7 @@ stock-screener/
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/esin-dev/stock-screener>
 ```
 
 ### Navigate to the Project
